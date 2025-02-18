@@ -3,6 +3,6 @@ from main import BooksCollector
 
 
 @pytest.fixture
-def books_collection():
-    books_collection = BooksCollector()
-    return books_collection
+def book_collection():
+    book_collection = BooksCollector()
+    return book_collection

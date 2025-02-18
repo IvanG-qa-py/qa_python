@@ -1,5 +1,5 @@
 from main import BooksCollector
-from conftest import books_collection
+from conftest import book_collection
 import pytest
 
 
@@ -59,8 +59,8 @@ class TestBooksCollector:
         assert book_collector.get_books_with_specific_genre(genre) == [name]
 
 
-    def test_get_books_for_children(self, books_collection):
-        my_collection = books_collection
+    def test_get_books_for_children(self, book_collection):
+        my_collection = book_collection
         books = ['Симбиоз', 'Демон', 'Внутри убийцы', 'Гадкий Я', 'Ревизор']
         genre = ['Фантастика', 'Ужасы', 'Детективы', 'Мультфильмы', 'Комедии']
         for i in range(5):
@@ -68,7 +68,7 @@ class TestBooksCollector:
         for i in range(5):
             my_collection.set_book_genre(books[i], genre[i])
         assert len(
-            my_collection.get_books_for_children()) == 3 and books_collection.get_books_for_children() == [
+            my_collection.get_books_for_children()) == 3 and book_collection.get_books_for_children() == [
                    'Симбиоз', 'Гадкий Я', 'Ревизор']
 
 
@@ -91,7 +91,7 @@ class TestBooksCollector:
                                       'Преступление и наказание',
                                       'Граф Монте-Кристо'
                                       ])
-    def test_get_list_of_favorites_books_positive_case(self, name, books_collection):
-        books_collection.add_new_book(name)
-        books_collection.add_book_in_favorites(name)
-        assert books_collection.get_list_of_favorites_books()
+    def test_get_list_of_favorites_books_positive_case(self, name, book_collection):
+        book_collection.add_new_book(name)
+        book_collection.add_book_in_favorites(name)
+        assert book_collection.get_list_of_favorites_books()
