@@ -25,7 +25,7 @@ class TestBooksCollector:
 
     @pytest.mark.parametrize('book', ['',
                                       'Невероятное пари, или Истинное происшествие, благополучно завершившееся сто лет назад'])
-    def test_add_new_book_more_negative_sizes(self, book):
+    def test_add_new_book_negative_sizes(self, book):
         book_collector = BooksCollector()
         assert not book_collector.add_new_book(book)
 
