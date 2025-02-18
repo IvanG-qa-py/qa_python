@@ -1,4 +1,5 @@
 from main import BooksCollector
+from conftest import books_collection
 import pytest
 
 
