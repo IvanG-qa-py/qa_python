@@ -1,6 +1,6 @@
 from main import BooksCollector
 import pytest
-from qa_python.conftest import books_collection
+
 
 
 class TestBooksCollector:

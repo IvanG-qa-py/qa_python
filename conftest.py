@@ -1,5 +1,5 @@
 import pytest
-from qa_python.main import BooksCollector
+from main import BooksCollector
 
 
 @pytest.fixture
