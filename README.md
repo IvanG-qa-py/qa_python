@@ -1,7 +1,7 @@
 ## Unit tests for class BookCollector
 ---
 
-### Fixture book_collection возвращает обЪект класса Bookcollector
+### Fixture book_collection возвращает объект класса Bookcollector
 ---
 ### Реализованы следующие тестовые сценарии:
 
