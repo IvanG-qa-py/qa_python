@@ -10,9 +10,10 @@ class TestBooksCollector:
                                       'Преступление и наказание',
                                       'Граф Монте-Кристо'
                                       ])
-    def test_add_new_book_name_is_positive(self, name, books_collection):
-        books_collection.add_new_book(name)
-        assert name in books_collection.get_books_genre()
+    def test_add_new_book_name_is_positive(self, name):
+        book_collector = BooksCollector()
+        book_collector.add_new_book(name)
+        assert name in book_collector.get_books_genre()
 
 
     def test_add_new_book_added_book_twice_is_negative(self):
