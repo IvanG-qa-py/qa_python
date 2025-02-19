@@ -15,4 +15,3 @@
 8. test_add_book_in_favorites_positive_case - проверка на добавление в избранное
 9. test_delete_book_from_favorites_positive_case - проверка на удаление из избранного
 10. test_get_list_of_favorites_books_positive_case - проверка на получение списка избранных книг
-
